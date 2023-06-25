@@ -14,7 +14,7 @@ class Configuration {
   1. Mainfiest file
   2. AppDelegate.swift file
   */
-  String mapKey = "AIzaSyCNw8p8lAjSGYr2GzQnkqwcBlEJs2tQ4cc";
+  String mapKey = "";
   /* The given logo with image by any brand  */
   String logoWithName = 'assets/logo/logo_with_name.png';
   String logoNetworkUrl = 'assets/images/logo_with_name.png';

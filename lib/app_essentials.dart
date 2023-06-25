@@ -1,5 +1,3 @@
-library app_essentials;
-
 import 'package:flutter/material.dart';
 
 import 'app/data/widgets/base_widget.dart';
