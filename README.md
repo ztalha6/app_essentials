@@ -11,12 +11,29 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# Flutter App Essentials
+
+Flutter App Essentials is a comprehensive package that aims to accelerate app development by providing essential features and utilities. It includes authentication management, API integration, exception handling, and more. With Flutter Fast App, developers can jumpstart their projects and focus on building great user experiences.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **Auth Repository**: A repository for managing user authentication, including sign-in, sign-up, password reset, and user profile management.
+- **User Manager**: A utility for managing user-related data and interactions, such as user preferences, profile updates, and access control.
+- **Token Manager**: A secure token management system for handling user authentication tokens and refreshing expired tokens.
+- **API Layers**: Abstracted layers for handling API requests and responses, including authentication headers and error handling.
+- **Concise main.dart File**: A streamlined main.dart file with boilerplate code, app initialization, and routing setup.
+- **Authentication Logic**: Pre-implemented authentication logic for handling login, registration, session management, and user state.
+- **Exception Handler**: A centralized exception handling mechanism for catching and handling errors in a unified way.
+- **Snackbar Handler**: A utility for displaying snackbars and toast messages, providing a consistent user feedback mechanism.
+
+## Installation
+
+To use App Essentials in your Flutter project, add the following dependency to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  app_essentials: ^1.0.0
+```
 
 ## Getting started
 
@@ -25,15 +42,21 @@ start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+
+import 'package:flutter/material.dart';
+import 'package:app_essentials/app_essentials.dart';
+
+void main() {
+  AppEssentials().main();
+}
+
 ```
 
-## Additional information
+## Contribution
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Contributions are welcome! If you find any issues or have suggestions for improvement, please create a new issue or submit a pull request on the GitHub repository.
+
+## License
+
+This project is licensed under the MIT License.
