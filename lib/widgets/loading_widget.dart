@@ -1,4 +1,4 @@
-import 'package:app_essentials/app/data/config/app_configuration.dart';
+import 'package:app_essentials/config/app_configuration.dart';
 import 'package:flutter/material.dart';
 
 class LoadingWidget extends StatelessWidget {

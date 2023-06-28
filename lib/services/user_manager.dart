@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:app_essentials/core/interfaces/repositories/user_repository.dart';
-import 'package:app_essentials/app/data/model/user_model.dart';
+import 'package:app_essentials/core/model/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserManager implements IUserRepository<User> {

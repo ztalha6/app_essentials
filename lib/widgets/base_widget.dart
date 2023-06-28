@@ -1,5 +1,4 @@
 import 'package:app_essentials/theme/app_theme.dart';
-import 'package:app_essentials/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -9,7 +8,8 @@ final GlobalKey<ScaffoldMessengerState> rootScaffoldMessengerKey =
 
 class BaseWidget extends StatelessWidget {
   final String initalRoute;
-  const BaseWidget(this.initalRoute, {super.key});
+  final List<GetPage<dynamic>>? getPages;
+  const BaseWidget(this.initalRoute, this.getPages, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class BaseWidget extends StatelessWidget {
             scaffoldMessengerKey: rootScaffoldMessengerKey,
             debugShowCheckedModeBanner: false,
             initialRoute: initalRoute,
-            getPages: EssentialAppPages.routes,
+            getPages: getPages,
             theme: AppTheme().getAppTheme(context),
           ),
         );
