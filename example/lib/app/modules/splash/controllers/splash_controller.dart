@@ -1,6 +1,6 @@
 import 'package:app_essentials/app/data/config/app_configuration.dart';
-import 'package:app_essentials/app/data/services/app_service.dart';
-import 'package:app_essentials/app/data/services/token_manager.dart';
+import 'package:app_essentials/services/app_service.dart';
+import 'package:app_essentials/services/token_manager.dart';
 import 'package:get/get.dart';
 
 import 'package:package_info_plus/package_info_plus.dart';

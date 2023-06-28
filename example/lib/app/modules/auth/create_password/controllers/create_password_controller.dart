@@ -1,6 +1,6 @@
 import 'package:app_essentials/app/data/repositories/auth_repository.dart';
-import 'package:app_essentials/app/data/services/validator_service.dart';
 import 'package:app_essentials/core/env/env_setup.dart';
+import 'package:app_essentials/services/validator_service.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

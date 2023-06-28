@@ -10,8 +10,8 @@ import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:app_essentials/app/data/config/app_configuration.dart';
 import 'package:app_essentials/app/data/model/user_model.dart';
 import 'package:app_essentials/app/data/repositories/auth_repository.dart';
-import 'package:app_essentials/app/data/services/validator_service.dart';
-import 'package:app_essentials/app/data/utils/utils.dart';
+import 'package:app_essentials/services/validator_service.dart';
+import 'package:app_essentials/utils/utils.dart';
 import 'package:app_essentials/core/env/env_setup.dart';
 import 'package:app_essentials/core/model/repository_response_model.dart';
 

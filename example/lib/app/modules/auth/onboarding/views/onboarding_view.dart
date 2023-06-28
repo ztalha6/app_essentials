@@ -1,5 +1,5 @@
 import 'package:app_essentials/app/data/config/asset_constants.dart';
-import 'package:app_essentials/app/data/widgets/primary_button.dart';
+import 'package:app_essentials/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
