@@ -9,8 +9,8 @@ import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
-import '../../../../data/services/validator_service.dart';
-import '../../../../data/utils/utils.dart';
+import '../../../../../services/validator_service.dart';
+import '../../../../../utils/utils.dart';
 
 class SignUpController extends GetxController {
   AuthRepository authRepository;

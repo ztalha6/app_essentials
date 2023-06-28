@@ -1,4 +1,4 @@
-import 'package:app_essentials/app/data/theme/app_theme.dart';
+import 'package:app_essentials/theme/app_theme.dart';
 import 'package:app_essentials/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

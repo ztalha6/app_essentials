@@ -6,10 +6,10 @@ import 'package:get/get.dart';
 
 import 'package:sizer/sizer.dart';
 
-import '../../../../data/widgets/custom_expandable_appbar.dart';
-import '../../../../data/widgets/custom_phone_field.dart';
-import '../../../../data/widgets/custom_text_form_field.dart';
-import '../../../../data/widgets/primary_button.dart';
+import '../../../../../widgets/custom_expandable_appbar.dart';
+import '../../../../../widgets/custom_phone_field.dart';
+import '../../../../../widgets/custom_text_form_field.dart';
+import '../../../../../widgets/primary_button.dart';
 import '../controllers/sign_up_controller.dart';
 
 class SignUpView extends GetView<SignUpController> {

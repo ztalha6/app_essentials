@@ -11,10 +11,10 @@ import 'package:app_essentials/core/model/repository_response_model.dart';
 import 'package:app_essentials/app/data/config/app_configuration.dart';
 import 'package:app_essentials/app/data/model/user_model.dart';
 import 'package:app_essentials/app/data/repositories/auth_repository.dart';
-import 'package:app_essentials/app/data/utils/utils.dart';
+import 'package:app_essentials/utils/utils.dart';
 import 'package:app_essentials/app/routes/app_pages.dart';
 
-import '../../../../data/services/validator_service.dart';
+import '../../../../../services/validator_service.dart';
 
 class SignInController extends GetxController {
   AuthRepository authRepository;

@@ -1,4 +1,4 @@
-import 'package:app_essentials/app/data/model/env/env_model.dart';
+import 'package:app_essentials/core/model/env/env_model.dart';
 
 class Environment {
   final String localApiBaseUrl;

@@ -1,4 +1,4 @@
-import 'package:app_essentials/app/data/enums/response_status.dart';
+import 'package:app_essentials/core/model/enums/response_status.dart';
 import 'package:app_essentials/core/api/interceptor/api_interceptor.dart';
 import 'package:app_essentials/core/model/base_response_model.dart';
 import 'package:dio/dio.dart';

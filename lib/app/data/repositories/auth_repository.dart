@@ -5,7 +5,7 @@ import 'package:app_essentials/core/model/base_response_model.dart';
 import 'package:app_essentials/core/model/repository_response_model.dart';
 import 'package:app_essentials/core/interfaces/repositories/auth_repository.dart';
 import 'package:app_essentials/app/data/api_services/auth_service.dart';
-import 'package:app_essentials/app/data/enums/response_status.dart';
+import 'package:app_essentials/core/model/enums/response_status.dart';
 import 'package:app_essentials/app/data/model/change_password/change_password_request_model.dart';
 import 'package:app_essentials/app/data/model/resend_otp/resend_otp_request_model.dart';
 import 'package:app_essentials/app/data/model/reset_password/reset_pass_request_model.dart';
@@ -15,13 +15,13 @@ import 'package:app_essentials/app/data/model/sign_up/sign_up_response_model.dar
 import 'package:app_essentials/app/data/model/user_model.dart';
 import 'package:app_essentials/app/data/model/verify_otp/verify_otp_request_model.dart';
 import 'package:app_essentials/app/data/model/verify_otp/verify_otp_response_model.dart';
-import 'package:app_essentials/app/data/services/exception_handler.dart';
-import 'package:app_essentials/app/data/services/snackbar_manager.dart';
+import 'package:app_essentials/services/exception_handler.dart';
+import 'package:app_essentials/services/snackbar_manager.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
-import '../services/token_manager.dart';
-import '../services/user_manager.dart';
+import '../../../services/token_manager.dart';
+import '../../../services/user_manager.dart';
 
 class AuthRepository implements IAuthRepository<AuthApiService> {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app/data/widgets/base_widget.dart';
+import 'widgets/base_widget.dart';
 import 'app/routes/app_pages.dart';
 import 'core/env/env_setup.dart';
 

@@ -5,10 +5,10 @@ import 'package:get/get.dart';
 
 import 'package:sizer/sizer.dart';
 
-import '../../../../data/widgets/custom_expandable_appbar.dart';
-import '../../../../data/widgets/custom_pin_code_field.dart';
-import '../../../../data/widgets/loading_widget.dart';
-import '../../../../data/widgets/primary_button.dart';
+import '../../../../../widgets/custom_expandable_appbar.dart';
+import '../../../../../widgets/custom_pin_code_field.dart';
+import '../../../../../widgets/loading_widget.dart';
+import '../../../../../widgets/primary_button.dart';
 import '../controllers/verify_otp_controller.dart';
 
 class VerifyOtpView extends GetView<VerifyOtpController> {

@@ -3,9 +3,9 @@ import 'package:get/get.dart';
 
 import 'package:sizer/sizer.dart';
 
-import '../../../../data/widgets/custom_dropdown_field.dart';
-import '../../../../data/widgets/custom_text_form_field.dart';
-import '../../../../data/widgets/primary_button.dart';
+import '../../../../../widgets/custom_dropdown_field.dart';
+import '../../../../../widgets/custom_text_form_field.dart';
+import '../../../../../widgets/primary_button.dart';
 import '../controllers/post_sign_up_controller.dart';
 
 class PostSignUpView extends StatelessWidget {

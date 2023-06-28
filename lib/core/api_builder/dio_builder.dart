@@ -1,6 +1,6 @@
 import 'package:app_essentials/core/api/interceptor/api_interceptor.dart';
 import 'package:app_essentials/core/env/env_setup.dart';
-import 'package:app_essentials/app/data/services/token_manager.dart';
+import 'package:app_essentials/services/token_manager.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
 
