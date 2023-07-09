@@ -1,3 +1,8 @@
+## 1.0.0
+
+- Authentication Module moved to seprated package.
+- Core application implementation.
+
 ## 0.1.0
 
 - Directory sturture changed.
