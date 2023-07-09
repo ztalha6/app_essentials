@@ -14,20 +14,16 @@ dependencies:
   dio_cache_interceptor: ^3.4.2
   flutter:
     sdk: flutter
-  flutter_facebook_auth: ^6.0.0
   flutter_staggered_animations: ^1.1.1
   get: ^4.6.5
   google_fonts: ^5.1.0
-  google_sign_in: ^6.1.4
   image_cropper: ^5.0.0
   image_picker: ^0.8.9
   intl_phone_number_input: ^0.7.3+1
-  package_info_plus: ^4.0.2
   pin_code_fields: ^7.4.0
   pull_to_refresh: ^2.0.0
   shared_preferences: ^2.1.2
   shimmer: ^3.0.0
-  sign_in_with_apple: ^5.0.0
   sizer: ^2.0.15
 
 dev_dependencies:
