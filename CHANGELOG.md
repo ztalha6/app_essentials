@@ -1,3 +1,8 @@
+## 1.0.3
+
+- BaseWidget Enhancements
+  - AppTheme class passed as parameter to avoid null exception on BuildContext.
+
 ## 1.0.2
 
 - BaseWidget Enhancements
