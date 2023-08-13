@@ -1,3 +1,9 @@
+## 1.0.1
+
+- CustomTextFormField properties enhanced.
+  - showLabelAboveField property added
+  - fillColor property added
+
 ## 1.0.0
 
 - Authentication Module moved to seprated package.
