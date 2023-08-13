@@ -1,3 +1,9 @@
+## 1.0.2
+
+- BaseWidget Enhancements
+  - ThemeData property added
+  - CustomTextFormField label UI fixed
+
 ## 1.0.1
 
 - CustomTextFormField properties enhanced.
