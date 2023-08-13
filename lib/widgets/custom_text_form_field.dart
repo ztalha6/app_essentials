@@ -145,7 +145,17 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 .headlineMedium!
                 .copyWith(color: Colors.grey),
             floatingLabelStyle: Theme.of(context).textTheme.headlineMedium,
-            label: widget.showLabelAboveField ? null : Text(widget.label!),
+            label: widget.showLabelAboveField
+                ? null
+                : Text(
+                    widget.label!,
+                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+                          color: widget.errorText != null
+                              ? Colors.red
+                              : const Color(0xFF707581),
+                          fontSize: 14,
+                        ),
+                  ),
             hintText: widget.hintText,
             hintStyle: Theme.of(context).textTheme.headlineMedium,
             border: OutlineInputBorder(
