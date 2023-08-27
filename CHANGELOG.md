@@ -1,3 +1,10 @@
+## 1.0.4
+
+- ImageUtil Updated
+  - getImageFromPhone method added
+  - memoryImageToBase64 method added
+  - Documentation written
+
 ## 1.0.3
 
 - BaseWidget Enhancements
