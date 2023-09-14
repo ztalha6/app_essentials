@@ -9,7 +9,9 @@ final GlobalKey<ScaffoldMessengerState> rootScaffoldMessengerKey =
 class BaseWidget extends StatelessWidget {
   final String initalRoute;
   final List<GetPage<dynamic>>? getPages;
-  const BaseWidget(this.initalRoute, this.getPages, {super.key});
+  final AppTheme? theme;
+
+  const BaseWidget(this.initalRoute, this.getPages, {super.key, this.theme});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class BaseWidget extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             initialRoute: initalRoute,
             getPages: getPages,
-            theme: AppTheme().getAppTheme(context),
+            theme: (theme ?? AppTheme()).getAppTheme(context),
           ),
         );
       },

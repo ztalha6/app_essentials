@@ -28,6 +28,8 @@ class CustomTextFormField extends StatefulWidget {
     this.suffixIcon,
     this.validator,
     this.onSaved,
+    this.fillColor,
+    this.showLabelAboveField = true,
   }) : super(key: key);
 
   final String? hintText;
@@ -39,6 +41,7 @@ class CustomTextFormField extends StatefulWidget {
   final String? errorText;
   final TextEditingController? controller;
   final Color? cursorColor;
+  final Color? fillColor;
   final TextInputType? keyboardType;
   final TextInputAction? textInputAction;
   final FocusNode? focusNode;
@@ -48,6 +51,7 @@ class CustomTextFormField extends StatefulWidget {
   final bool enabled;
   final bool reduceContentPadding;
   final bool isMandatory;
+  final bool showLabelAboveField;
   final Widget? suffixIcon;
   final Widget? perfixIcon;
   final List<TextInputFormatter>? inputFormatters;
@@ -71,39 +75,43 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        if (widget.label != null)
-          Padding(
-            padding: const EdgeInsets.only(left: 4),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      widget.label!,
-                      style:
-                          Theme.of(context).textTheme.headlineMedium!.copyWith(
-                                color: widget.errorText != null
-                                    ? Colors.red
-                                    : const Color(0xFF707581),
-                                fontSize: 16,
-                              ),
-                    ),
-                    if (widget.isMandatory)
+        if (widget.showLabelAboveField) ...[
+          if (widget.label != null)
+            Padding(
+              padding: const EdgeInsets.only(left: 4),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    children: [
                       Text(
-                        '*',
-                        style: TextStyle(
-                          color: widget.errorText != null
-                              ? Colors.red
-                              : Theme.of(context).primaryColor,
-                        ),
+                        widget.label!,
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium!
+                            .copyWith(
+                              color: widget.errorText != null
+                                  ? Colors.red
+                                  : const Color(0xFF707581),
+                              fontSize: 16,
+                            ),
                       ),
-                  ],
-                ),
-              ],
+                      if (widget.isMandatory)
+                        Text(
+                          '*',
+                          style: TextStyle(
+                            color: widget.errorText != null
+                                ? Colors.red
+                                : Theme.of(context).primaryColor,
+                          ),
+                        ),
+                    ],
+                  ),
+                ],
+              ),
             ),
-          ),
-        SizedBox(height: 1.5.h),
+          SizedBox(height: 1.5.h),
+        ],
         TextFormField(
           enabled: widget.enabled,
           validator: widget.validator,
@@ -130,14 +138,24 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             filled: true,
             fillColor: widget.errorText != null
                 ? Colors.red.withOpacity(0.1)
-                : Colors.grey.shade200,
+                : widget.fillColor ?? Colors.grey.shade200,
             floatingLabelBehavior: FloatingLabelBehavior.always,
             labelStyle: Theme.of(context)
                 .textTheme
                 .headlineMedium!
                 .copyWith(color: Colors.grey),
             floatingLabelStyle: Theme.of(context).textTheme.headlineMedium,
-            // label: widget.label == null ? null : Text(widget.label!),
+            label: widget.showLabelAboveField
+                ? null
+                : Text(
+                    widget.label!,
+                    style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+                          color: widget.errorText != null
+                              ? Colors.red
+                              : const Color(0xFF707581),
+                          fontSize: 14,
+                        ),
+                  ),
             hintText: widget.hintText,
             hintStyle: Theme.of(context).textTheme.headlineMedium,
             border: OutlineInputBorder(
