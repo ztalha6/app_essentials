@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 
+@Deprecated("Use the DioInterface from api_interceptor_v2.dart instead")
 class DioInterceptor extends Interceptor {
   final Dio dio;
 

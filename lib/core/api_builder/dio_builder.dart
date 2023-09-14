@@ -29,6 +29,7 @@ final CacheOptions cacheOptions = CacheOptions(
   allowPostMethod: true,
 );
 
+@Deprecated("Use the DioBuilder from dio_builder_v2.dart instead")
 class DioBuilder {
   Future<DioBuilderResponse> buildCachedDio({
     bool hasAuth = true,
