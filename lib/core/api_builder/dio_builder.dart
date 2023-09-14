@@ -63,23 +63,34 @@ class DioBuilder {
   Future<DioBuilderResponse> buildNonCachedDio({
     bool hasAuth = false,
     bool shouldQueue = false,
-    bool passDomain = false,
+    bool useAccessToken = false,
+    bool isFromData = false,
+    bool useXAccessToken = false,
+    String xAccessToken = '',
+    String accessToken = '',
+    bool sendRequestWithBaseUrl = true,
   }) async {
+    if (useXAccessToken) {
+      assert(xAccessToken.isNotEmpty);
+    }
+    if (useAccessToken) {
+      assert(accessToken.isNotEmpty);
+    }
+
     final Options dioOptions = _getDioOptions();
     final String token = await TokenManager().getToken();
     final Dio dio = Dio(
       BaseOptions(
-        baseUrl: Environment.currentEnv.baseUrl,
+        baseUrl: sendRequestWithBaseUrl ? Environment.currentEnv.baseUrl : '',
         connectTimeout: const Duration(milliseconds: 15000),
         receiveTimeout: const Duration(milliseconds: 15000),
-        headers: hasAuth
-            ? {
-                'Authorization': 'Bearer $token',
-                'Content-Type': 'application/json',
-              }
-            : {
-                'Content-Type': 'application/json',
-              },
+        headers: {
+          if (hasAuth) 'Authorization': token,
+          'Content-Type':
+              isFromData ? 'multipart/form-data' : 'application/json',
+          if (useAccessToken) 'AccessToken': accessToken,
+          if (useXAccessToken) 'x-access-token': xAccessToken,
+        },
       ),
     );
     dio.interceptors.add(DioInterceptor(dio));
