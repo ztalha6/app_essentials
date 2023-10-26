@@ -3,31 +3,31 @@ description: Flutter App Essentials is a comprehensive package that aims to acce
 repository: https://github.com/ztalha6/app_essentials
 issue_tracker: https://github.com/ztalha6/app_essentials/issues
 version: 1.0.4
-homepage: null
+homepage: https://github.com/ztalha6/app_essentials
 
 environment:
   sdk: ">=3.0.2 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
-  dio: ^5.2.1+1
-  dio_cache_interceptor: ^3.4.2
+  dio: ^5.3.3
+  dio_cache_interceptor: ^3.4.4
   flutter:
     sdk: flutter
   flutter_staggered_animations: ^1.1.1
   get: ^4.6.5
-  google_fonts: ^5.1.0
+  google_fonts: ^6.1.0
   image_cropper: ^5.0.0
-  image_picker: ^1.0.2
+  image_picker: ^1.0.4
   intl_phone_number_input: ^0.7.3+1
-  pin_code_fields: ^7.4.0
+  pin_code_fields: ^8.0.1
   pull_to_refresh: ^2.0.0
-  shared_preferences: ^2.1.2
+  shared_preferences: ^2.2.2
   shimmer: ^3.0.0
   sizer: ^2.0.15
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
 
