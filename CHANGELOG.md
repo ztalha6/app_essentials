@@ -1,3 +1,7 @@
+## 1.0.5
+
+- Dependencies Updated
+
 ## 1.0.4
 
 - ImageUtil Updated
