@@ -2,7 +2,7 @@ name: app_essentials
 description: Flutter App Essentials is a comprehensive package that aims to accelerate app development by providing essential features and utilities.
 repository: https://github.com/ztalha6/app_essentials
 issue_tracker: https://github.com/ztalha6/app_essentials/issues
-version: 1.0.4
+version: 1.0.5
 homepage: https://github.com/ztalha6/app_essentials
 
 environment:
